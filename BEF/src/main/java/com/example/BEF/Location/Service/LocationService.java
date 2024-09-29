@@ -1,8 +1,8 @@
 package com.example.BEF.Location.Service;
 
-import com.example.BEF.Disbled.Domain.Disabled;
-import com.example.BEF.Disbled.Service.DisabledRepository;
-import com.example.BEF.Disbled.Service.DisabledService;
+import com.example.BEF.Disabled.Domain.Disabled;
+import com.example.BEF.Disabled.Service.DisabledRepository;
+import com.example.BEF.Disabled.Service.DisabledService;
 import com.example.BEF.Location.DTO.UserLocationRes;
 import com.example.BEF.Location.Domain.Location;
 import com.example.BEF.User.DTO.UserDisabledDTO;

@@ -1,6 +1,6 @@
-package com.example.BEF.Disbled.Service;
+package com.example.BEF.Disabled.Service;
 
-import com.example.BEF.Disbled.Domain.Disabled;
+import com.example.BEF.Disabled.Domain.Disabled;
 import com.example.BEF.User.DTO.UserDisabledDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
