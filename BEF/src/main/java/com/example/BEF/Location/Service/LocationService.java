@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Service
 @Slf4j
@@ -30,10 +31,9 @@ public class LocationService {
     public List<UserLocationRes> findLocationWithDisabled(Long userNumber) {
         // 유저 장애 정보
         UserDisabledDTO userDiabledDTO = userService.settingUserDisabled(userNumber);
-        log.info(userDiabledDTO.toString());
 
         // 필터링 된 관광지 장애 정보 리스트
-        List<Disabled> disabledList = disabledService.filteringDisabled(userDiabledDTO, disabledRepository.findAll());
+        Set<Disabled> disabledList = disabledService.filteringDisabled(userDiabledDTO);
         List<UserLocationRes> userLocationResList = new ArrayList<>();
 
         // 필터링 된 관광지 정보 리스트 리턴
